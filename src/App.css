@@ -1,0 +1,225 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    font-size: 1.5rem;
+}
+
+h1 {
+    font-size: 5rem;
+}
+
+.bold {
+    font-weight: 900;
+    font-size: 30px;
+}
+
+.app {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-color: rgba(0,0,0,0.3);
+    overflow-y: hidden;
+}
+
+.app:before {
+    content: '';
+    background-image: url('./assets/sunny.jpg');
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background-size: cover;
+    background-position: bottom;    
+}
+
+.container {
+    margin: auto;
+    padding: 0 1rem;
+    position: relative;
+    top: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.app .top {
+    width: 40%;
+    margin: 1rem auto;
+}
+
+.app .description {
+    position: relative;
+    transform-origin: 0 0;
+    font-style: italic;
+}
+
+h1, .description, .location {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #f8f8f8;
+    text-shadow: 3px 6px rgba(0,0,0,0.2);
+}
+.app .bottom {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    width: 100%;
+    margin: 1rem auto;
+    padding: 1rem;
+    border-radius: 10px;
+    background-color: rgba(255,255,255,0.2);
+    box-shadow: 3px 6px rgba(50,50,70,0.5);
+    color: #f8f8f8;
+    text-shadow: 3px 6px rgba(0,0,0,0.1);
+    margin-top: 50px;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.app .search {
+    text-align: center;
+    padding: 1rem;
+}
+
+.app input  {
+    padding: .7rem 1.5rem;
+    font-size: 1.2rem;
+    border-radius: 0px 0px 16px 16px;
+    
+    background: rgba(255,255,255,0.1);
+    color: #f8f8f8;;
+    box-shadow: 3px 6px rgba(50,50,70,0.5);
+    text-shadow: 3px 6px rgba(0,0,0,0.2);
+    text-align: center;
+    margin-top: -25px;
+}
+
+::placeholder {
+    color: #f8f8f8;
+}
+
+h2, span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #f8f8f8;
+    text-shadow: 3px 6px rgba(0,0,0,0.2);
+}
+span {
+    color: rgba(214, 23, 23, 0.8);
+    box-shadow: 3px 6px rgba(50,50,70,0.5);
+}
+
+.container-5days {
+    height: 250px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.d {
+    height: 230px;
+    box-shadow: 3px 6px rgba(50,50,70,0.5);
+    background-color: rgba(255,255,255,0.2);
+    border-radius: 10px;
+}
+
+.containertwo {
+    width: 80%;
+    margin-left: 10%;
+    
+}
+
+.daysFore {
+    margin: 3%;
+}
+
+.imgs {
+    margin: auto;
+    display: block;
+    height: 5vh;
+    width: 5vw;
+    margin-top: 20px;
+    /* background: url('./assets/sunny.jpg'); */
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background-size: cover;
+    background-position: bottom;
+}
+
+.location {
+    margin-top: 10px;
+}
+
+.small-it {
+    font-size: 15px;
+}
+
+.temp {
+    background-color: rgba(255,255,255,0.2);
+    border-radius: 16px;
+}
+
+.button1 {
+    height: 40px;
+    width: 40%;
+    display: block;
+    margin: auto;
+    font-style: italic;
+}
+/* 
+@media only screen and (max-width: 500px) {
+    section {
+    flex-direction: column-reverse;
+    }
+    aside:first-of-type {
+    width: 100%;
+    height: 100px;
+    background-color: fuchsia;
+    }
+    aside:last-of-type {
+    order: unset;
+    }
+    main {
+    width: unset;
+    /* width: 100%;
+    width: initial; */
+    /* }
+    }
+    
+    @media only screen and (max-width: 800px) {
+    section {
+    flex-wrap: wrap;
+    }
+    aside:last-of-type {
+    background-color: firebrick;
+    width: 100%;
+    height: 100px;
+    order: -1;
+    }
+    }  */ 
+
+/*     @media only screen and (max-width: 500px) {
+        .conteiner {
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.5fr 1fr 2fr 2fr 1fr 0.5fr;
+        grid-template-areas:
+        "nav"
+        "main"
+        "sidebar"
+        "content"
+        "gallery"
+        "footer";
+        }
+        }  */
+
